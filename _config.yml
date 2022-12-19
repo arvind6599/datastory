@@ -4,4 +4,4 @@ description: What does data tell us about the difference in the casting for popu
 show_downloads: True
 navigation:
   - title: Home
-    url: index
+    url: /
