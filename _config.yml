@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: ADA Template Website
-description: A template website for ADA
+title: Popularity vs Critical Acclaim
+description: What does data tell us about the difference in the casting for popular and critically acclaimed movies. Is it different? Yes, then how?
 show_downloads: True
 navigation:
   - title: Home
