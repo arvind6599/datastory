@@ -6,11 +6,7 @@ layout: default
 ---
 ![Oscar vs Box Office](data/main.png)
 
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Every Actor/Actress have their own motivation to work hard and be part of movies that have large veiwership and recognition. The motivation could be either financial success or great praise for their work by critics and the auidence. There are so many 
 
 # Header 1
 
