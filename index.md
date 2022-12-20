@@ -8,18 +8,18 @@ layout: default
 
 Every Actor/Actress have their own motivation to work hard and be part of movies that have large veiwership and recognition. The motivation could be either financial success or great praise for their work by critics and the auidence. There are so many 
 
-# Header 1
+# Correlation between actor features and success metrics (building credibility for our chosen features)
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Linear relations between the actor features and also with ratings, revenue and budget
 
-## Header 2
+## Non-trivial difference between popularity and critical acclaim []
 The quote 
 > Whether the work that I do shall succeed or achieve critical acclaim is for the audience to decide.
 
 by Amitabh Bhachan is proof that there is difference between the two still remains non-trivial
 
 Many movies such as Tenet, Avatar and other huge budget movies backed by very well acclaimed directors have lead to success by both metrics.
-### Header 3
+# How do actor profiles change over time ?? Does it suggest something
 
 ```js
 // Javascript code with syntax highlighting.
@@ -36,19 +36,18 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-#### Header 4
+# Have a comparison of features based on different success metrics
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 
-##### Header 5
-
+##### lifetime of an actor in a genre - first movie to last movie
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
 3.  This is an ordered list following a header.
 
-###### Header 6
+# Current decade actor profiles for box office success vs oscar awards kinda success
 
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
@@ -57,8 +56,9 @@ end
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
+# Conclusion
 
+We attempt to provide a data science approach to movie casting based on correlations with success and trends over time, to identify patterns and features that may be important in deciding who is a better fit to play the leading role for your movie. In this attempt we also try to quantify differences if any between the recipe to get awards or make money, with exceptions both (masterpiece) or neither (flops)
 * * *
 
 ### Here is an unordered list:
@@ -103,14 +103,14 @@ end
 ### Definition lists can be used with HTML syntax.
 
 <dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
+<dt>Age</dt>
+<dd>Age of the actor</dd>
+<dt>Experience in total</dt>
+<dd>Number of movies as lead actor before the time of realease of the movie</dd>
+<dt>Genre background</dt>
+<dd>Vector showing the different type of genres the actor has worked in - signifying diversity</dd>
+<dt>Gender</dt>
+<dd>Actor:0/Actress:1</dd>
 </dl>
 
 ```
