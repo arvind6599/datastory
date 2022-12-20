@@ -28,7 +28,6 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://github.com/arvind6599/datastory" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
-footer: This is maintained by Arvind, Hao, Sid, Johnny
 
 minima:
   skin: dark
