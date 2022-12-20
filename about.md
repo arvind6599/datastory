@@ -9,13 +9,13 @@ This Website is our datastory submission for the ADA project. We used the [IMDb 
 You can find the source code for the website at:
 [datastory](https://github.com/arvind6599/datastory)
 
-## Who are we?
+## Who are we? Team JASH
 
 | Name    | Department    | 
 |:-------------|:------------------|
-| Arvind           | Data Science | 
-| Hao | Mechanical  |
-| Johnny           | Computer Science     |
-| Sid           | Everything |
+| Johnny         | Computer Science | 
+| Arvind | Data Science  |
+| Sid           | Team Management    |
+| Hao           | Mechanical |
 
 

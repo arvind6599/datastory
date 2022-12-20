@@ -4,8 +4,7 @@
 
 layout: default
 ---
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+![Oscar vs Box Office](data/main.png)
 
 [Link to another page](./another-page.html).
 
@@ -18,11 +17,12 @@ There should be whitespace between paragraphs. We recommend including a README, 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Header 2
+The quote 
+> Whether the work that I do shall succeed or achieve critical acclaim is for the audience to decide.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+by Amitabh Bhachan is proof that there is difference between the two still remains non-trivial
 
+Many movies such as Tenet, Avatar and other huge budget movies backed by very well acclaimed directors have lead to success by both metrics.
 ### Header 3
 
 ```js
