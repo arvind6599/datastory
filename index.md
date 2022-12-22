@@ -43,14 +43,14 @@ Many movies such as Tenet, Avatar and other huge budget movies backed by very we
 3.  This is an ordered list following a header.
 
 # Current decade actor profiles for box office success vs oscar awards kinda success
-
+![Popular movie genre pie chart](data/task3-genre-pie.png)
 
 # Conclusion
 
 We attempt to provide a data science approach to movie casting based on correlations with success and trends over time, to identify patterns and features that may be important in deciding who is a better fit to play the leading role for your movie. In this attempt we also try to quantify differences if any between the recipe to get awards or make money, with exceptions both (masterpiece) or neither (flops)
 * * *
 
-### Here is an unordered list:
+<!-- ### Here is an unordered list:
 
 *   Item foo
 *   Item bar
@@ -86,7 +86,7 @@ We attempt to provide a data science approach to movie casting based on correlat
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](https://guides.github.com/activities/hello-world/branching.png) -->
 
 
 
