@@ -104,8 +104,8 @@ We attempt to provide a data science approach to movie casting based on correlat
 * * *
 
 # Datastory 
-* Analytic approach to casting, what features matter based on the featuers of the movie you want to make 
-* 
+* Analytical approach to casting, what features matter based on type of movie you want to make (genre)
+* Notion of genre background to signify the acting background and see how it relates to movie genres. (finding trends)
 
 # Task 1 - Credibility (Hoa and Arvind)
 *   Reveal actor feature corrrelations with ratings and number of votes
