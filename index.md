@@ -101,7 +101,7 @@ Many movies such as Tenet, Avatar and other huge budget movies backed by very we
 
 
 # Top 1000 Popular movies imdb dataset
-![Popular movie genre pie chart](data/task3-genre-pie.png)
+![Popular movie genre pie chart](data/genx_pie.png)
 
 # Conclusion
 
