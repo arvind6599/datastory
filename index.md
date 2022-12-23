@@ -20,6 +20,7 @@ Our analysis also has the potential to inform future research on the relationshi
 
 Finally, our analysis could inform policy decisions related to the film industry. For example, if we find that certain actor characteristics are associated with movie success, policymakers may consider ways to support and promote actors with these characteristics. This could include initiatives to increase diversity in the industry or to provide training and development opportunities for actors with the most promising characteristics. By understanding the factors that contribute to movie success, we can help policymakers make informed decisions about how to support and promote the film industry.
 
+![genre_pairs](data/genre_circle.png)
 
 # Trends through time
 ### We analyze the career trajectories of actors/actresses
