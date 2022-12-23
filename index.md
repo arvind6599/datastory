@@ -95,13 +95,35 @@ Many movies such as Tenet, Avatar and other huge budget movies backed by very we
 
 
 
-# Current decade actor profiles for box office success vs oscar awards kinda success
+# Top 1000 Popular movies imdb dataset
 ![Popular movie genre pie chart](data/task3-genre-pie.png)
 
 # Conclusion
 
 We attempt to provide a data science approach to movie casting based on correlations with success and trends over time, to identify patterns and features that may be important in deciding who is a better fit to play the leading role for your movie. In this attempt we also try to quantify differences if any between the recipe to get awards or make money, with exceptions both (masterpiece) or neither (flops)
 * * *
+
+# Datastory 
+* Analytic approach to casting, what features matter based on the featuers of the movie you want to make 
+* 
+
+# Task 1 - Credibility (Hoa and Arvind)
+*   Reveal actor feature corrrelations with ratings and number of votes
+*   Count genre pairs and trends to find frequent genre pairs and use this to establish that there are genre patterns in movies
+*   Covariance matrix for the actor features to show any patterns or redundancy
+
+# Task 2 - actor features over various generations (Johnny + Sid)
+* non-weighted and weighted with averages over generations for various features
+* gender analysis to plot distribution of genre's of the experience actors for each generation and genre
+* Add to the story and show trends in the shift towards building a more diverse "GENRE BACKGROUND" 
+
+# Task 3 - Successful trends in actor features that are favourable in the current generation (Arvind)
+* Visualizations to represent favour profiles and actor names, experience, specific to each genre
+* Calculate weighted actor features to suggest a good ideal actor profile
+
+# Conclusion
+* what actor features to look when your movie has a particular genre and you want to assemble a cast
+* How to choose a career path as an actor based on your current experience, which genres are easy to get into, which ones are the long games, which ones can lead to a faster path to critical acclaim, good ratings and popularity
 
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
