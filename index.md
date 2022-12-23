@@ -2,11 +2,13 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: page
 ---
 ![Oscar vs Box Office](data/main.png)
 
 All actors have their own motivation to work hard and be part of movies that have large veiwership and recognition. The motivation could be either financial success or great praise for their work by critics and the auidence.
+
+{% include correlation_map.html %}
 
 We will explore the relationship between actor/actress experience and movie success/popularity with goals of forming a descriptive analysis of actor-feature data to summarize and compare successful actor profiles from different generations.
 
@@ -25,6 +27,8 @@ Finally, our analysis could inform policy decisions related to the film industry
 # Trends through time
 ### We analyze the career trajectories of actors/actresses
 we use the information about the number of movies each actor/actress had starred in before each movie to see how their career has progressed over time. Can plot the average IMDB rating of the movies they have appeared in over time and see if there are any trends.
+
+![generational_genre_Experience](data/genre_genration_exp.png)
 
 ### Examining the impact of actor/actress experience on movie genre:
 Using the information about actor/actress experience, we see if there is a relationship with the genre of the movie. For example, do more experienced actors/actresses tend to star in certain genres more frequently?
