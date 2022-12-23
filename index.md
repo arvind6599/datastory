@@ -126,6 +126,8 @@ We attempt to provide a data science approach to movie casting based on correlat
 * Visualizations to represent favour profiles and actor names, experience, specific to each genre
 * Calculate weighted actor features to suggest a good ideal actor profile
 
+dummy
+
 # Conclusion
 * what actor features to look when your movie has a particular genre and you want to assemble a cast
 * How to choose a career path as an actor based on your current experience, which genres are easy to get into, which ones are the long games, which ones can lead to a faster path to critical acclaim, good ratings and popularity
