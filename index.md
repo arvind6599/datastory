@@ -8,8 +8,6 @@ layout: page
 
 All actors have their own motivation to work hard and be part of movies that have large veiwership and recognition. The motivation could be either financial success or great praise for their work by critics and the auidence.
 
-{% include correlation_map.html %}
-
 We will explore the relationship between actor/actress experience and movie success/popularity with goals of forming a descriptive analysis of actor-feature data to summarize and compare successful actor profiles from different generations.
 
 ### Why is this interesting and what are the benefits?
@@ -22,7 +20,18 @@ Our analysis also has the potential to inform future research on the relationshi
 
 Finally, our analysis could inform policy decisions related to the film industry. For example, if we find that certain actor characteristics are associated with movie success, policymakers may consider ways to support and promote actors with these characteristics. This could include initiatives to increase diversity in the industry or to provide training and development opportunities for actors with the most promising characteristics. By understanding the factors that contribute to movie success, we can help policymakers make informed decisions about how to support and promote the film industry.
 
+# Genre analysis
+In this section, we want to investigate the hidden pattern of genres in the movie industry and explore the influence of different movie genres onto the profession career of an actor.
+
+- 1. Distribution of genres in the movie industry.
+
+A single movie usually belongs to multiple movie genres. The interaction between different movie genres is quite complicated. In order to give a clear view of the genre pattern existed in the movie industry, we are going to show the frequency of movie genre combinations in our base movie dataset by a chord diagram, where the width of connection lines represents the frequency. We filtered out some genres according to their appearance in our dataset and only kept popular genres in the diagram. We can observe that drama genre is widely connected with the other genres, which gives us a hint that drama movie will be a good choice if new actors have no idea in selecting their first film. Because it will provide valuable experience that can be used in lots of movies. Meanwhile, we notice that high correlation exists in multiple genre pairs, such as family and comedy, action and adventure. 
+
 ![genre_pairs](data/genre_circle.png)
+
+- 2. Investigating impact of movie experience
+
+{% include correlation_map.html %}
 
 # Trends through time
 ### We analyze the career trajectories of actors/actresses
@@ -63,7 +72,7 @@ create a scatterplot to visualize the relationship between actor/actress experie
 
 Of course, there are still drawbacks; using IMDB average movie rating and the number of votes as a measure of movie success has some limitations. For example, these measures may not be directly related to box office revenue, and there could be other factors that influence the IMDB rating or the number of votes a movie receives that are not related to the quality or success of the movie. However, using these measures can still provide valuable insights into the relationship between actor/actress experience and movie success.
 
-# Correlation between actor features and success metrics (building credibility for our chosen features)
+<!-- # Correlation between actor features and success metrics (building credibility for our chosen features)
 
 Linear relations between the actor features and also with ratings, revenue and budget
 
@@ -73,8 +82,7 @@ Linear relations between the actor features and also with ratings, revenue and b
 | Age                   | Age of the actor |
 | Experience            | Number of movies as lead actor before the time of realease of the movie   |
 | Genre background      | Vector showing the different type of genres the actor has worked in - signifying diversity    |
-| Gender                | Actor:0/Actress:1 |
-
+| Gender                | Actor:0/Actress:1 | -->
 
 ## Non-trivial difference between popularity and critical acclaim []
 The quote 
@@ -112,7 +120,7 @@ We attempt to provide a data science approach to movie casting based on correlat
 * Analytical approach to casting, what features matter based on type of movie you want to make (genre)
 * Notion of genre background to signify the acting background and see how it relates to movie genres. (finding trends)
 
-# Task 1 - Credibility (Hoa and Arvind)
+# Task 1 - Credibility (Hao and Arvind)
 *   Reveal actor feature corrrelations with ratings and number of votes
 *   Count genre pairs and trends to find frequent genre pairs and use this to establish that there are genre patterns in movies
 *   Covariance matrix for the actor features to show any patterns or redundancy
