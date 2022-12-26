@@ -15,7 +15,7 @@ You can find the source code for the website at:
 |:-------------|:------------------|
 | Johnny         | Computer Science | 
 | Arvind | Data Science  |
-| Sid           | Team Management    |
+| Sid           | Management   |
 | Hao           | Mechanical |
 
 

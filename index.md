@@ -88,20 +88,29 @@ Many movies such as Tenet, Avatar and other huge budget movies backed by very we
 
 ## Have a comparison of features based on different success metrics
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
 
 ##### lifetime of an actor in a genre - first movie to last movie
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
 
 
+# Do Actors stick to the same genre in the current generation ?
+
+Having studied the trends in actor experience and audience perference over past generation, we are now going to look at the current state of the movie industry which is GenX. We filtered out certain movie genres in order to help make obersvations about general trends in the diversity of an actor's genre background and preference. So we filtered out animation movies, biographies and documentaries as they feature voice actors, or casting based on the subject. This was to remove a dependance on features such as voice, language or the specific subject the movie is about. 
+
+![Popular movie genre pie chart](data/task3-genre-pie.png)
+
+Here we see that the major genres are Drama, Comedy, Crime, Action, Romance. Now we wish to chose 4 g
+
+We see that 
+
+## genre entropy for actors
+We define a diversity metric called genre entropy to represent if an actor has ventured into many different genres or stuck to the genre of movies they have already worked on
 
 
-# Top 1000 Popular movies imdb dataset
-![Popular movie genre pie chart](data/genx_pie.png)
+Using number of votes on the imdb ratings of their past movies as a popularity metric we plot the "genre entropy" for the top 10 female and male actors in GenX.
+
+![male entropy](data/pop_male_chart.png)
+
+![female entropy](data/pop_female_chart.png)
 
 # Conclusion
 
@@ -131,11 +140,3 @@ dummy
 # Conclusion
 * what actor features to look when your movie has a particular genre and you want to assemble a cast
 * How to choose a career path as an actor based on your current experience, which genres are easy to get into, which ones are the long games, which ones can lead to a faster path to critical acclaim, good ratings and popularity
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
