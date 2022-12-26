@@ -21,7 +21,8 @@ Our analysis also has the potential to inform future research on the relationshi
 Finally, our analysis could inform policy decisions related to the film industry. For example, if we find that certain actor characteristics are associated with movie success, policymakers may consider ways to support and promote actors with these characteristics. This could include initiatives to increase diversity in the industry or to provide training and development opportunities for actors with the most promising characteristics. By understanding the factors that contribute to movie success, we can help policymakers make informed decisions about how to support and promote the film industry.
 
 # Genre analysis
-In this section, we want to investigate the hidden pattern of genres in the movie industry and explore the influence of different movie genres onto the profession career of an actor.
+
+This section will look at the hidden patterns of the film industry's genres and examine how various film genres can affect an actor's professional career.
 
 - 1. Distribution of genres in the movie industry.
 
@@ -29,7 +30,8 @@ Typically, a single film can be classified as many film genres. It's pretty intr
 
 ![genre_pairs](data/genre_circle.png)
 
-- 2. Investigating impact of movie experience
+- 2. Investigating impact of movie experience.
+
 We develop features about each actor or actress's experience in each well-known film genre—drama, action, romance, comedy, crime, war, family, and mystery—in order to substantiate the aforementioned claim. In light of this, we make movie-actor pairs using all of the films and actors in our dataset. Now, we have statistical information on the actor's experience in all prominent movie genres that depicts the actor's background before filming the movie. We assume that an actor who has already appeared in films of the same genre has a higher chance of landing a role when they audition. By using a correlation analysis, we can determine which types of movie experiences will increase our chances of landing a role in a new film. In the next figure, in each row, we first selected movies of the same genre G and then computed pairwise correlation of genre G with other genres. A higher correlation value means a greater chance of landing a part in the appropriate film. For instance, the majority of film genres exhibit strong correlations with drama. If you were never involved in a romance movie and you want to get a chance to film a romance movie, the experience of drama and comedy movies will help you to survive the audition. These results, we believe, will assist aspiring actors in exploring their career under supervision.
 {% include correlation_map.html %}
 
