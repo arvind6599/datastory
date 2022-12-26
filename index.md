@@ -56,14 +56,12 @@ We develop features about each actor or actress's experience in each well-known 
 In the figure above, for each row we first selected movies of the same genre G and then computed pairwise correlation of genre G with other genres. A higher correlation value means a greater chance of landing a part in the appropriate film. For instance, the majority of film genres exhibit strong correlations with drama. If you were never involved in a romance movie and you want to get a chance to film a romance movie, the experience of drama and comedy movies will help you to survive the audition. These results, we believe, will assist aspiring actors in exploring their career under supervision.
 
 
-# Trends through time
-### We analyze the career trajectories of actors/actresses
-we use the information about the number of movies each actor/actress had starred in before each movie to see how their career has progressed over time. Can plot the average IMDB rating of the movies they have appeared in over time and see if there are any trends.
+# Analysis of movie experience over the generations
+We now know movie experience caters to the success of actors and actresses, thus it is worth looking at it in more detail especially how it changed over the generations. To do this, we examine the number of movies each actor/actress had starred in before each movie which inter alia reveals how their career has progressed over time. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. For instance, the genres "Drama" and "Action" require on average a movie experience of below half a movie. As a result, these two genres can be regarded as the historic breeding soil and playground for unexperienced actors to start their career. Are thus these genres the best ones to start with if you want to become an actor? Answers to this will come later.
 
-![generational_genre_Experience](data/genre_genration_exp.png)
+![movie_experience_per_genre](data/analysis-over-time/average%20actor%20movie%20experience.png)
 
-### Examining the impact of actor/actress experience on movie genre:
-Using the information about actor/actress experience, we see if there is a relationship with the genre of the movie. For example, do more experienced actors/actresses tend to star in certain genres more frequently?
+![movie_experience_per_genre](data/analysis-over-time/experience%20per%20genre.png)
 
 ### also
 It could be a good idea to analyze the relationship between actor/actress experience and movie success, as well as other factors, for different time periods. Doing this could allow us to see if there are any trends or patterns that differ between the different eras. For example, we can compare the average experience of leading actors/actresses in movies released during the baby boomer era versus the millennial era and see if there are any differences.
@@ -165,6 +163,8 @@ $$
  \text{Genre Entropy (GE)} = H(\text{normalized}(V_g))
 $$
 
+For this purpose we should first investigate the dominance of a genre in every generation. 
+![movie_experience_per_genre](data/analysis-over-time/movie_share_of_generation_per_genre.png)
 
 Using number of votes on the imdb ratings of their past movies as a popularity metric we plot the "genre entropy" for the top 10 male and female actors in GenZ.
 
