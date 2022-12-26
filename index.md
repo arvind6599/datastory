@@ -66,6 +66,7 @@ We first explicitly delimit what we mean by generations:
     Millennial Generation (circa 1985 to 1996)
     Gen Z (post-Millennial) (circa 1997 to 2012)
     Gen X (circa 2013+)
+    
 We divide our dataset into subgroups defined by when the movies were released. The reasoning is better explained later on; in a nutshell it is part of a stratified analysis we conduct.
 
 
