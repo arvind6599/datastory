@@ -57,6 +57,18 @@ In the figure above, for each row we first selected movies of the same genre G a
 
 
 # Analysis of movie experience over the generations
+We first explicitly delimit what we mean by generations:
+
+    Greatest Generation (born circa 1901 to 1924)
+    Silent Generation (circa 1925 to 1945)
+    Baby Boomers (circa 1946 to 1964)
+    Boomers (circa 1965 to 1985)
+    Millennial Generation (circa 1985 to 1996)
+    Gen Z (post-Millennial) (circa 1997 to 2012)
+    Gen X (circa 2013+)
+We divide our dataset into subgroups defined by when the movies were released. The reasoning is better explained later on; in a nutshell it is part of a stratified analysis we conduct.
+
+
 We now know movie experience caters to the success of actors and actresses, thus it is worth looking at it in more detail especially how it changed over the generations. To do this, we examine the number of movies each actor/actress had starred in before each movie which inter alia reveals how their career has progressed over time. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. 
 
 ![movie_experience_per_genre](data/analysis-over-time/average%20actor%20movie%20experience.png)
@@ -70,7 +82,29 @@ On the other hand, the "Romance" genre has the slowest increasing slope when it 
 ### Moving on...
 It could be a good idea to analyze the relationship between actor/actress experience and movie success, as well as other factors, for different time periods. Doing this could allow us to see if there are any trends or patterns that differ between the different eras. For example, we can compare the average experience of leading actors/actresses in movies released during the baby boomer era versus the millennial era and see if there are any differences.
 
-It's important to keep in mind that making a distinction between different time periods could also introduce other variables that could influence the results of your analysis. For example, there may be differences in movie-making technology, audience preferences, or economic conditions that could affect the success of a movie and confound the relationship between actor/actress experience and movie success. We  need to consider these factors and try to control for them in your analysis as per what the assistant said.
+It's important to keep in mind that making a distinction between different time periods could also introduce other variables that could influence the results of your analysis. For example, there may be differences in movie-making technology, audience preferences, or economic conditions that could affect the success of a movie and confound the relationship between actor/actress experience and movie success. We  need to consider these factors and try to control them.
+
+### Looking at the top 1000 actors only
+For further inspection, we pick out the top 1000 actors in all of the considered generations and calculate the distribution of their experience per movie genre and end up with the following graph. 
+![top_1000](data/analysis-over-time/top_1000_both.png)
+
+As it can be seen for the four main genres, the first 3 generations we are considering generally see a strict increase in actor experience for all genres, but starts plateauing between the `boomers` and `gen_z` generations. These are generally the generations considered to be a "golden age of cinema" with rapid technological advancements due to an outpouring of funding which saw the release of many popular and critically acclaimed movies. 
+
+However, the latest `gen_x` is not to be necessarily discounted either; the seeming drop in average acting experience of the top 1000 actors/actresses could be due to the fact that the generation is still ongoing, and that the talents contributing to these statistics are still growing.
+
+
+It is also interesting to make a distinction between male and female actors in our analysis, as there may be differences in the distribution of experience among male and female actors in different movie genres. So we look the above again while differentiating between the top actors and actresses.
+
+The most notable matter we first realize is that we still observe the same overall trend of average acting experience increasing during the first generations and then plateauing. However, there remains stark differences too:
+
+We find that male actors tend to have more experience in `Drama`, `Action` and `Comedy` while both genders have comparable experience in `Romance` movies. This could suggest differences in the types of roles that are available to male and female actors, and the way that their careers are developed within the film industry.
+
+![top_1000_actors](data/analysis-over-time/top_1000_actors.png)
+
+![top_1000_actresses](data/analysis-over-time/top_1000_actresses.png)
+
+Overall, it is clear to see that the top male actors have almost twice as much average experience than female actors. It is not uncommon for male actors to have more experience than female actors in the film industry, as men have historically been more represented in leading roles and have often had more opportunities to work on a wider range of projects. This is a clear bias between males and females; it suggests that there are significant disparities in the career opportunities available to male and female actors within the film industry. It could also indicate that male actors are more likely to be cast in lead roles of the studied genres. On the other hand, it could also be interpreted in a way that favors aspiring female actors; on average you need less movie experience than men to be recognized as a top female actor.
+
 
 # However we remain aware of the potential confounders
 When analyzing the relationship between actor/actress experience and movie success for different time periods there are unobserved latent variables that might be implicitly affecting our results
