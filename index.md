@@ -57,13 +57,17 @@ In the figure above, for each row we first selected movies of the same genre G a
 
 
 # Analysis of movie experience over the generations
-We now know movie experience caters to the success of actors and actresses, thus it is worth looking at it in more detail especially how it changed over the generations. To do this, we examine the number of movies each actor/actress had starred in before each movie which inter alia reveals how their career has progressed over time. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. For instance, the genres "Drama" and "Action" require on average a movie experience of below half a movie. As a result, these two genres can be regarded as the historic breeding soil and playground for unexperienced actors to start their career. Are thus these genres the best ones to start with if you want to become an actor? Answers to this will come later.
+We now know movie experience caters to the success of actors and actresses, thus it is worth looking at it in more detail especially how it changed over the generations. To do this, we examine the number of movies each actor/actress had starred in before each movie which inter alia reveals how their career has progressed over time. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. 
 
 ![movie_experience_per_genre](data/analysis-over-time/average%20actor%20movie%20experience.png)
 
+For instance, a century ago the genres "Drama" and "Action" required on average a movie experience of below half a movie. However in the latest generations, these two genres alongside "Comedy" have a much higher average starting point when looking at the average data of successful actors.
+
+On the other hand, the "Romance" genre has the slowest increasing slope when it comes to the average bar of movie experience for leading actors in the field. To this day, leading romance actors have less than 1 movie experience when starring in romance movies. As a result, this genre can be regarded as the historic breeding soil and playground for unexperienced actors to start their career. 
+
 ![movie_experience_per_genre](data/analysis-over-time/new_experience_per_genre.png)
 
-### also
+### Moving on...
 It could be a good idea to analyze the relationship between actor/actress experience and movie success, as well as other factors, for different time periods. Doing this could allow us to see if there are any trends or patterns that differ between the different eras. For example, we can compare the average experience of leading actors/actresses in movies released during the baby boomer era versus the millennial era and see if there are any differences.
 
 It's important to keep in mind that making a distinction between different time periods could also introduce other variables that could influence the results of your analysis. For example, there may be differences in movie-making technology, audience preferences, or economic conditions that could affect the success of a movie and confound the relationship between actor/actress experience and movie success. We  need to consider these factors and try to control for them in your analysis as per what the assistant said.
@@ -79,8 +83,8 @@ When analyzing the relationship between actor/actress experience and movie succe
 
   - There are other factors that could potentially impact the success of a movie, such as the quality of the script, the marketing campaign, or the performance of the actors. Unfortunately we can't possible have access to such information, but we can shield our selves by using a sensitivity analysis model (what we saw in week 6 of class)
 
-### Some ideas to control confounding variables
-- Stratified analysis : We divide our data into subgroups that depend on time periods (think baby boomer era vs gen Z era for example) to reduce the impact of the previously considered confounders; movies in the same time-period are much more likely to be made using similar technology and during comparable economic conditions.  We can see how audience preference shifts through time (by seeing how the top movies genres vary through time for example) 
+### Some ideas we implemented to control confounding variables
+- Stratified analysis : We divided our data into subgroups that depend on time periods (think baby boomer era vs gen Z era for example) to reduce the impact of the previously considered confounders; movies in the same time-period are much more likely to be made using similar technology and during comparable economic conditions.  We can see how audience preference shifts through time (by seeing how the top movies genres vary through time for example) 
 
 
 We recognize that it is impossible to completely encapsulate the effect of the confounders, but we hope that by taking them into consideration and communicating the limits of our analysis we are increasing the validity of our analysis.
@@ -88,8 +92,8 @@ We recognize that it is impossible to completely encapsulate the effect of the c
 <!-- # Without IMDB revenue, only average rating and number of votes, we can still...
 ...explore the relationship between actor/actress experience and movie success. Just use the IMDB average movie rating as a measure of movie success, and the number of votes as a proxy for the popularity of the movie. -->
 
-Idea:
-create a scatterplot to visualize the relationship between actor/actress experience and IMDB average movie rating. We can fit a regression model to predict IMDB average movie rating based on actor/actress experience, and use the number of votes as a control variable to account for the popularity of the movie. This would allow us to see if there is a relationship between actor/actress experience and movie success, controlling for the popularity of the movie.
+<!-- Idea: -->
+<!-- create a scatterplot to visualize the relationship between actor/actress experience and IMDB average movie rating. We can fit a regression model to predict IMDB average movie rating based on actor/actress experience, and use the number of votes as a control variable to account for the popularity of the movie. This would allow us to see if there is a relationship between actor/actress experience and movie success, controlling for the popularity of the movie. -->
 
 Of course, there are still drawbacks; using IMDB average movie rating and the number of votes as a measure of movie success has some limitations. For example, these measures may not be directly related to box office revenue, and there could be other factors that influence the IMDB rating or the number of votes a movie receives that are not related to the quality or success of the movie. However, using these measures can still provide valuable insights into the relationship between actor/actress experience and movie success.
 
