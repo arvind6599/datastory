@@ -61,7 +61,7 @@ We now know movie experience caters to the success of actors and actresses, thus
 
 ![movie_experience_per_genre](data/analysis-over-time/average%20actor%20movie%20experience.png)
 
-![movie_experience_per_genre](data/analysis-over-time/experience%20per%20genre.png)
+![movie_experience_per_genre](data/analysis-over-time/new_experience_per_genre.png)
 
 ### also
 It could be a good idea to analyze the relationship between actor/actress experience and movie success, as well as other factors, for different time periods. Doing this could allow us to see if there are any trends or patterns that differ between the different eras. For example, we can compare the average experience of leading actors/actresses in movies released during the baby boomer era versus the millennial era and see if there are any differences.
