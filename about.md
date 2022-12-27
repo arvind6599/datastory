@@ -18,7 +18,7 @@ You can find the source code for the website at:
 | Sid           | Management   |
 | Hao           | Mechanical |
 
-
+<!-- 
 # Datastory 
 * Analytical approach to casting, what features matter based on type of movie you want to make (genre)
 * Notion of genre background to signify the acting background and see how it relates to movie genres. (finding trends)
@@ -35,9 +35,4 @@ You can find the source code for the website at:
 
 # Task 3 - Successful trends in actor features that are favourable in the current generation (Arvind)
 * Visualizations to represent favour profiles and actor names, experience, specific to each genre
-* Calculate weighted actor features to suggest a good ideal actor profile
-
-dummy
-
-
-
+* Calculate weighted actor features to suggest a good ideal actor profile -->
