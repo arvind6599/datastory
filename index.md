@@ -183,16 +183,16 @@ The figures above suggest that unless an actor/actress wishes to stick strictly 
 
 In order to do this, we must calculate a diversity metric based on the past experience of an actor and also filter out the movie stars of our current generation. For this we consider relevant experience in the major genres.
 
-We add up the movie counts weighted by their IMDb ratings to look at well-rated career paths, and calculate a vector denoting  **Weighted Experience (WE)** in the major genres, simply put- 
+We add up the movie counts weighted by their IMDb ratings to look at well-rated career paths, and calculate a vector $V_g$ denoting  **Weighted Experience (WE)** in the major genres, simply put- 
 
 $$
-  V = \text{WE([Drama, Romance, Comedy, Action, Adventure])}
+  V_g = \text{WE([Drama, Romance, Comedy, Action, Adventure])}
 $$
 
 Now we wish to calculate whether this vector is more uniform or skewed towards a genre pair or group.
 
 ### Genre entropy for actors
-We define a diversity metric called genre entropy (GE) to represent if an actor has ventured into many different genres or stuck to the genre of movies they have already worked on. We first normalize the vector V to represent a probabilistic distribution for the genre choices made by the actor/actress and then calculate the shannon's entropy(H) of this vector. So simply put,
+We define a diversity metric called genre entropy (GE) to represent if an actor has ventured into many different genres or stuck to the genre of movies they have already worked on. We first normalize the vector $V_g$ to represent a probabilistic distribution for the genre choices made by the actor/actress and then calculate the shannon's entropy($H$) of this vector. So simply put,
 
 $$
  \text{Genre Entropy (GE)} = H(\text{normalized}(V_g))
