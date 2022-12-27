@@ -144,29 +144,30 @@ Linear relations between the actor features and also with ratings, revenue and b
 | Genre background      | Vector showing the different type of genres the actor has worked in - signifying diversity    |
 | Gender                | Actor:0/Actress:1 | -->
 
-## Non-trivial difference between popularity and critical acclaim []
+<!-- ## Non-trivial difference between popularity and critical acclaim []
 The quote 
 > Whether the work that I do shall succeed or achieve critical acclaim is for the audience to decide.
 
 by Amitabh Bhachan is proof that there is difference between the two still remains non-trivial
 
-Many movies such as Tenet, Avatar and other huge budget movies backed by very well acclaimed directors have lead to success by both metrics.
-# How do actor profiles change over time ?? Does it suggest something
+Many movies such as Tenet, Avatar and other huge budget movies backed by very well acclaimed directors have lead to success by both metrics. -->
+
+<!-- # How do actor profiles change over time ?? Does it suggest something
 
 
 ## Have a comparison of features based on different success metrics
 
 
-##### lifetime of an actor in a genre - first movie to last movie
+##### lifetime of an actor in a genre - first movie to last movie -->
 
 
-# Do Actors stick to the same genre in the current generation ?
+# Do Actors stick to the same genre in the current generation [2013-] ?
 
 Having studied the trends in actor experience and audience perference over past generation, we are now going to study the GenZ movie industry. 
 
 In order to study general trends between actors and genres, we **filtered out certain genres such as Animation, Biographies and Documentaries** as they might only feature voice actors, or depend heavily on the subject of the movie.
 
-The GenZ dataset consists of movies released between the period 2013 - now, containing movies from many different genres.
+The current movies dataset consists of movies released between the period 2013 - now, from many different genres.
 
 ![Popular movie genre pie chart](data/task3-genre-pie.png)
 
@@ -174,7 +175,9 @@ Here we see that the major genres are Drama, Comedy, Crime, Action, Romance. We 
 
 ![genre conbinations](data/genre_combi.png)
 
-With the increase in the scale of movie production and the constant demand of the audience, we see that movies now belong to many different genres and not often a single one. It is then the requirement for actors to adapt to this situation and be comfortable playing roles which are very diverse in nature, in order to have a long illustruous career. The downside of not adapting would be to rinse and repeat the same type of movies until your audience gets tires of it, or be known as a "one hit wonder" forver hiding in the shadow of the fame acquired from the success of a movie in the past.
+With the increase in the scale of movie production and the constant demand of the audience, we see that movies now belong to many different genres and not often a single one. It is then the requirement for actors to adapt to this situation and be comfortable playing roles which are very diverse in nature, in order to have a long illustruous career. 
+
+The downside of not adapting would be to rinse and repeat the same type of movies until your audience gets tires of it, or be known as a "one hit wonder" forver hiding in the shadow of the fame acquired from the success of a movie in the past.
  
 
 ## Do Leading movie actor/actresses stick to the same genre?
