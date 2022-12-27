@@ -15,21 +15,6 @@ We will explore the relationship between different movie genres and also trends 
 Movie studios and production companies constantly strive to make popular movies that entertain it's audience while also getting good ratings from the mass population. We study how movies have changed their strategies over different generations to satisfy the audience preference at that time. We think that the **evolution in casting decisions and movie genre choices** has a lot to be learnt from in order to better understand the current state of the movie industry.
 
 <!--
-**Without IMDb Box Office data**: Since this is a paid resource we chose to find a new way to quantify success for a movie. We study these trends using two different success metrics - **Ratings and Populartiy**. We already have the IMDb ratings but how do we measure popularity?
-
- This information can be useful for movie studios and production companies as they make casting decisions for future projects, as well as for actors and actresses looking to advance their careers. 
-
-
-| Rating   |   Popularity   | 
-|:-------------|:------------------|
-| Average IMDb rating                   | Number of votes for the IMDb rating |
-
-Why did we chose this? 
-$$ \text{Correlation(Average Rating, Number of votes)} = 0.02$$
-
-This suggets that they are very weakly correlated and are good candidates for features to look at our data from different perspectives.
-
-
 By observing the trends in the features of successful actor profiles from different generations, we can see how the qualities and experiences that lead to success have changed over time. This information can be useful for actors and actresses looking to succeed in the industry, as it can help them understand what qualities and experiences are likely to lead to success in their careers. -->
 
 
@@ -142,14 +127,9 @@ Linear relations between the actor features and also with ratings, revenue and b
 | Age                   | Age of the actor |
 | Experience            | Number of movies as lead actor before the time of realease of the movie   |
 | Genre background      | Vector showing the different type of genres the actor has worked in - signifying diversity    |
-| Gender                | Actor:0/Actress:1 | -->
+| Gender                | Actor:0/Actress:1 | 
 
-<<<<<<< HEAD
-<!-- ## Non-trivial difference between popularity and critical acclaim []
-=======
-<!--
 ## Non-trivial difference between popularity and critical acclaim []
->>>>>>> 6bb49a57f209c559e967c1e9587b2c85c17ebe44
 The quote 
 > Whether the work that I do shall succeed or achieve critical acclaim is for the audience to decide.
 
@@ -163,68 +143,72 @@ Many movies such as Tenet, Avatar and other huge budget movies backed by very we
 ## Have a comparison of features based on different success metrics
 
 
-<<<<<<< HEAD
 ##### lifetime of an actor in a genre - first movie to last movie -->
 
 
-# Do Actors stick to the same genre in the current generation [2013-] ?
-=======
-##### lifetime of an actor in a genre - first movie to last movie-->
+## What about the current generation ?
 
-
-# What about the current generation?
->>>>>>> 6bb49a57f209c559e967c1e9587b2c85c17ebe44
-
-Having studied the trends in actor experience and audience perference over past generation, we are now going to study the GenZ movie industry. 
+Having studied the trends in actor experience and audience perference over past generation, we are now going to study the current trends in the movie industry. 
 
 In order to study general trends between actors and genres, we **filtered out certain genres such as Animation, Biographies and Documentaries** as they might only feature voice actors, or depend heavily on the subject of the movie.
 
-The current movies dataset consists of movies released between the period 2013 - now, from many different genres.
+The current generation movie dataset consists of movies released between the period 2013 - now, from many different genres such as:
 
 ![Popular movie genre pie chart](data/task3-genre-pie.png)
 
-Here we see that the major genres are Drama, Comedy, Crime, Action, Romance. We also have many movies with multiple genres. Popular combinations of genres are :
+From the figure above we observe that the major genres are **Drama, Comedy, Adventure, Action, Romance**. It is not surprising that the most common genre is "Drama" since it is the broadest genre which is defined as - movies that are intended to be more serious than humourous in tone. Some film marketers even argue that "Drama is not a real genre" because it does not convey a lot to the audience, nevertheless it still forms an integral part of our analysis in order to make associations.
 
-![genre conbinations](data/genre_combi.png)
+# Are many genres clubbed together or do we have single genre movies?
+There are many reasons for a movie to have more than one genre :
+* **Nature of the genres**: Superhero movies are a combination of Action, Adventure and Sci-Fi
+* **Increase in the scale of production**: No limit on possibilities
+* **Satisfy the audience with diverse interests**: Viewership from different interest groups
+* **Rising demand for novelty in the movie production and storyline**: Experimentation
 
-With the increase in the scale of movie production and the constant demand of the audience, we see that movies now belong to many different genres and not often a single one. It is then the requirement for actors to adapt to this situation and be comfortable playing roles which are very diverse in nature, in order to have a long illustruous career. 
+With the exception of **Comedy and Drama** we see that many other popular movie genres are not singletons in the figure below.
 
-The downside of not adapting would be to rinse and repeat the same type of movies until your audience gets tires of it, or be known as a "one hit wonder" forver hiding in the shadow of the fame acquired from the success of a movie in the past.
+![genre conbinations](data/genres_dist_gena.png)
+
+ We can thus make associations of the major genres **using the correlation map (between actor experience and movie genre) and the genre combinations distribution** as:
+
+* Drama - Mystery, Crime, Thriller, Comedy, Romance,
+* Romance - Drama, Comedy
+* Comedy - Family, Drama  
+* Action - Adventure, Crime, Sport
+* Adventure - Action, Drama
+
+The figures above suggest that unless an actor/actress wishes to stick strictly to either comedy or serious movies, they need to be comfortable playing very diverse roles in order to have a long illustrious career. Let us further investigate if this the reality of the current generation moviestars.
  
+# Do leading movie actor/actresses stick to the same genre?
 
-## Do Leading movie actor/actresses stick to the same genre?
+In order to do this, we must calculate a diversity metric based on the past experience of an actor and also filter out the movie stars of our current generation. For this we consider relevant experience in the major genres.
 
-We must now quantify the diversity of an actor's career in the movie industry. For this we use the genres of the movies in which they played a leading role and categorize them into 5 major genres - 
-
-* Drama
-* Romance
-* Comedy
-* Action
-* Adventure
-
-We add up the movie counts weighted by their IMDb ratings in order to filter out flops, and calculate an vector denoting - 
+We add up the movie counts weighted by their IMDb ratings to look at well-rated career paths, and calculate a vector denoting  **Weighted Experience (WE)** in the major genres, simply put- 
 
 $$
-  V_g = [ \text{  Drama Experience ,  Romance Experience, Comedy Experience, Action Experience, Adventure Experience }]
+  V = \text{WE([Drama, Romance, Comedy, Action, Adventure])}
 $$
 
-Now we wish to calculate whether this vector is more uniform or skewed towards a particular set of genres. We do this by calculating something that we made up called "genre entropy".
+Now we wish to calculate whether this vector is more uniform or skewed towards a genre pair or group.
 
 ### Genre entropy for actors
-We define a diversity metric called genre entropy (GE) to represent if an actor has ventured into many different genres or stuck to the genre of movies they have already worked on. We first normalize the vector $V_g$ to represent a probabilistic distribution for the genre choices made by the actor/actress and then calculate the shannon's entropy($H$) of this vector. So simply put,
+We define a diversity metric called genre entropy (GE) to represent if an actor has ventured into many different genres or stuck to the genre of movies they have already worked on. We first normalize the vector V to represent a probabilistic distribution for the genre choices made by the actor/actress and then calculate the shannon's entropy(H) of this vector. So simply put,
 
 $$
  \text{Genre Entropy (GE)} = H(\text{normalized}(V_g))
 $$
 
-For this purpose we should first investigate the dominance of a genre in every generation. 
-![movie_experience_per_genre](data/analysis-over-time/movie_share_of_generation_per_genre.png)
+<!-- For this purpose we should first investigate the dominance of a genre in every generation. 
+![movie_experience_per_genre](data/analysis-over-time/movie_share_of_generation_per_genre.png) -->
 
-Using number of votes on the imdb ratings of their past movies as a popularity metric we plot the "genre entropy" for the top 10 male and female actors in GenZ.
+#### Filtering for moviestars
+**Using number of votes on the IMDb ratings** of their past movies as a popularity metric we plot the Genre entropy for the top 10 male and female moviestars.
 
 ![male entropy](data/pop_male_chart.png)
 
 ![female entropy](data/pop_female_chart.png)
+
+In the figure above we see that many of the well-known actors have a diverse career because their genre entropy is very close to the max value (GE = 2.32) that is attained for a uniform distribution. These results further verify the suggestions made earlier based on the associations between movie genres that actors do have to be more diverse in their career in oder to become famous and financially successful. It allows you to be open to more roles in the movie industry and also build trust among producers and directors about filling in the shoes of the leading role envision.
 
 # Conclusion
 
