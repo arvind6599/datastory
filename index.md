@@ -12,7 +12,14 @@ We will explore the relationship between different movie genres and also trends 
 
 # Why is this interesting and what are the benefits?
 
-Movie studios and production companies constantly strive to make popular movies that entertain it's audience while also getting good ratings from the mass population. We study how movies have changed their strategies over different generations to satisfy the audience preference at that time. We think that the **evolution in casting decisions and movie genre choices** has a lot to be learnt from in order to better understand the current state of the movie industry.
+Movie studios and production companies constantly strive to make popular movies that entertain it's audience while also getting good ratings from the mass population. We study how movies have changed their strategies over different generations to satisfy the audience preference at that time. 
+By exploring the relationship between actor/actress experience and movie genres, we can gain valuable insights into the factors that contribute to an actor's success within specific genres. This information can be useful for movie studios and production companies as they can **enhance their casting decisions and movie genre choice** for future projects by looking at past projects, as well as for actors and actresses looking to advance their careers within particular genres.
+
+In addition to understanding what factors contribute to success within specific genres, our analysis can also help us identify trends in the characteristics of successful actors within different genres. By comparing successful actor profiles from different generations within specific genres, we can see how the qualities and experiences that lead to success have changed over time. This information can be useful for actors and actresses looking to succeed in specific genres, as it can help them understand what qualities and experiences are likely to lead to success in those genres.
+
+Our analysis also has the potential to inform future research on the relationship between actor/actress characteristics and success within specific genres. By providing a foundation for further research, we can help researchers build on our findings to explore this topic in more depth or to examine other factors that may contribute to success within specific genres.
+
+Finally, our analysis could inform policy decisions related to the film industry. For example, if we find that certain actor characteristics are associated with success within specific genres, policymakers may consider ways to support and promote actors with these characteristics within those genres.
 
 <!--
 By observing the trends in the features of successful actor profiles from different generations, we can see how the qualities and experiences that lead to success have changed over time. This information can be useful for actors and actresses looking to succeed in the industry, as it can help them understand what qualities and experiences are likely to lead to success in their careers. -->
