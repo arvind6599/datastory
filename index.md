@@ -8,7 +8,7 @@ layout: page
 
 All actors have their own motivation to work hard and be part of movies that have large veiwership and recognition. The motivation could be either financial success or great praise for their work by critics and the auidence.
 
-We will explore the relationship between different movie genres and also trens in actor/actress experience to study the career paths they have followed to make certain observations about how the industry has evolved and understand what popular actors have done to have a successful career in the movie industry.
+We will explore the relationship between different movie genres and also trends in actor/actress experience to study the career paths they have followed to make certain observations about how the industry has evolved and understand what popular actors have done to have a successful career in the movie industry.
 
 # Why is this interesting and what are the benefits?
 
@@ -46,12 +46,12 @@ Typically, a single film can be classified as many film genres. It's pretty intr
 
 ![genre_pairs](data/genre_circle.png)
 
-Several genres were removed from the diagram based on how frequently they appeared in our dataset, leaving only the most widely used genres. We can see that the drama genre is closely related to the other genres, which suggests that a drama movie will be a wise choice if rookie actors are unsure of what to look for in their debut movie. because it will give them vital experience that many films can use. Meanwhile, we see that there is a strong association between certain genre pairs, such as comedy and family, action and adventure. Additionally, if two movie genres are significantly connected, we anticipate that an actor or actress with appropriate prior acting experience in one genre will benefit from landing a job in the other.
+Several genres were removed from the diagram based on how frequently they appeared in our dataset, leaving only the most widely used genres. We can see that the drama genre is closely related to the other genres, which suggests that a drama movie will be a wise choice if rookie actors are unsure of what to look for in their debut movie because it will give them vital experience that many films can use. Meanwhile, we see that there is a strong association between certain genre pairs, such as comedy and family, action and adventure. Additionally, if two movie genres are significantly connected, we anticipate that an actor or actress with appropriate prior acting experience in one genre will benefit from landing a job in the other. Let's further investigate this matter...
 
 
 # Investigating impact of movie experience
 
-We develop features about each actor or actress's experience in each well-known film genre—drama, action, romance, comedy, crime, war, family, and mystery—in order to substantiate the aforementioned claim. In light of this, we make movie-actor pairs using all of the films and actors in our dataset. Now, we have statistical information on the actor's experience in all prominent movie genres that depicts the actor's background before filming the movie. We assume that an actor who has already appeared in films of the same genre has a higher chance of landing a role when they audition. By using a correlation analysis, we can determine which types of movie experiences will increase our chances of landing a role in a new film. 
+We develop features about each actor or actress's experience in each well-known film genre—drama, action, romance, comedy, crime, war, family, and mystery in order to substantiate the aforementioned claim. In light of this, we make movie-actor pairs using all of the films and actors in our dataset. Now, we have statistical information on the actor's experience in all prominent movie genres that depicts the actor's background before filming the movie. We assume that an actor who has already appeared in films of the same genre has a higher chance of landing a role when they audition. By using a correlation analysis, we can determine which types of movie experiences will increase actors' chances of getting a role in a new film. 
 
 {% include correlation_map.html %}
 
@@ -59,7 +59,7 @@ In the figure above, for each row we first selected movies of the same genre G a
 
 
 # Analysis of movie experience over the generations
-We first explicitly delimit what we mean by generations:
+We now know movie experience caters to the success of actors and actresses, thus it is worth looking at it in more detail - especially how it changed over the generations. To do so, we first divide our dataset into subgroups defined by when the movies were released. The reasoning is better explained later on; in a nutshell it is part of a stratified analysis we conduct. The following generations are considered:
 
     Greatest Generation (born circa 1901 to 1924)
     Silent Generation (circa 1925 to 1945)
@@ -69,23 +69,22 @@ We first explicitly delimit what we mean by generations:
     Gen Z (post-Millennial) (circa 1997 to 2012)
     Gen X (circa 2013+)
     
-We divide our dataset into subgroups defined by when the movies were released. The reasoning is better explained later on; in a nutshell it is part of a stratified analysis we conduct.
-
-
-We now know movie experience caters to the success of actors and actresses, thus it is worth looking at it in more detail especially how it changed over the generations. To do this, we examine the number of movies each actor/actress had starred in before each movie which inter alia reveals how their career has progressed over time. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. 
+ To ultimately analyse movie experience over time, we examine the number of movies each leading actor/actress had starred in as lead before each movie which inter alia reveals how their career has progressed over time. If a an actor is led or not, is determined by IMDB - our data source for this analysis. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. 
 
 ![movie_experience_per_genre](data/analysis-over-time/average%20actor%20movie%20experience.png)
 
-For instance, a century ago the genres "Drama" and "Action" required on average a movie experience of below half a movie. However in the latest generations, these two genres alongside "Comedy" have a much higher average starting point when looking at the average data of successful actors.
+For instance, a century ago the genres "Drama" and "Action" required on average a movie experience of below half a movie. However in the latest generations, these two genres alongside "Comedy" have a much higher average starting point when looking at the average data of leading actors.
 
-On the other hand, the "Romance" genre has the slowest increasing slope when it comes to the average bar of movie experience for leading actors in the field. To this day, leading romance actors have less than 1 movie experience when starring in romance movies. As a result, this genre can be regarded as the historic breeding soil and playground for unexperienced actors to start their career. 
+On the other hand, the "Romance" genre has the slowest increasing slope when it comes to the average bar of movie experience for leading actors in the field. To this day, leading romance actors have less than 1 movie experience when starring in romance movies. As a result, this genre can be regarded as the historic breeding soil and playground for unexperienced actors to start their career. Considering the conclusions from our earlier analysis of movie experience's impact, we can argue that one of the most common career paths is to firstly shot a movie in Romance and then continue acting as lead in Drama or Comedy.
 
 ![movie_experience_per_genre](data/analysis-over-time/new_experience_per_genre.png)
 
+<!--
 ## Moving on...
 It could be a good idea to analyze the relationship between actor/actress experience and movie success, as well as other factors, for different time periods. Doing this could allow us to see if there are any trends or patterns that differ between the different eras. For example, we can compare the average experience of leading actors/actresses in movies released during the baby boomer era versus the millennial era and see if there are any differences.
 
 It's important to keep in mind that making a distinction between different time periods could also introduce other variables that could influence the results of your analysis. For example, there may be differences in movie-making technology, audience preferences, or economic conditions that could affect the success of a movie and confound the relationship between actor/actress experience and movie success. We  need to consider these factors and try to control them.
+-->
 
 ## Looking at the top 1000 actors only
 For further inspection, we pick out the top 1000 actors in all of the considered generations and calculate the distribution of their experience per movie genre and end up with the following graph. 
@@ -98,7 +97,7 @@ However, the latest `gen_x` is not to be necessarily discounted either; the seem
 
 It is also interesting to make a distinction between male and female actors in our analysis, as there may be differences in the distribution of experience among male and female actors in different movie genres. So we look the above again while differentiating between the top actors and actresses.
 
-The most notable matter we first realize is that we still observe the same overall trend of average acting experience increasing during the first generations and then plateauing. However, there remains stark differences too:
+The most notable matter we first realize is that we still observe the same overall trend of average acting experience increasing during the first generations and then plateauing. However, there remains stark differences too.
 
 We find that male actors tend to have more experience in `Drama`, `Action` and `Comedy` while both genders have comparable experience in `Romance` movies. This could suggest differences in the types of roles that are available to male and female actors, and the way that their careers are developed within the film industry.
 
@@ -122,7 +121,6 @@ When analyzing the relationship between actor/actress experience and movie succe
 
 ### Some ideas we implemented to control confounding variables
 - Stratified analysis : We divided our data into subgroups that depend on time periods (think baby boomer era vs gen Z era for example) to reduce the impact of the previously considered confounders; movies in the same time-period are much more likely to be made using similar technology and during comparable economic conditions.  We can see how audience preference shifts through time (by seeing how the top movies genres vary through time for example) 
-
 
 We recognize that it is impossible to completely encapsulate the effect of the confounders, but we hope that by taking them into consideration and communicating the limits of our analysis we are increasing the validity of our analysis.
 
@@ -163,7 +161,7 @@ Many movies such as Tenet, Avatar and other huge budget movies backed by very we
 ##### lifetime of an actor in a genre - first movie to last movie-->
 
 
-# Do Actors stick to the same genre in the current generation ?
+# What about the current generation?
 
 Having studied the trends in actor experience and audience perference over past generation, we are now going to study the GenZ movie industry. 
 
