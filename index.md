@@ -10,13 +10,14 @@ All actors have their own motivation to work hard and be part of movies that hav
 
 We will explore the relationship between different movie genres and also trens in actor/actress experience to study the career paths they have followed to make certain observations about how the industry has evolved and understand what popular actors have done to have a successful career in the movie industry.
 
-### Why is this interesting and what are the benefits?
+# Why is this interesting and what are the benefits?
 
 Movie studios and production companies constantly strive to make popular movies that entertain it's audience while also getting good ratings from the mass population. We study how movies have changed their strategies over different generations to satisfy the audience preference at that time. We think that the **evolution in casting decisions and movie genre choices** has a lot to be learnt from in order to better understand the current state of the movie industry.
 
+<!--
 **Without IMDb Box Office data**: Since this is a paid resource we chose to find a new way to quantify success for a movie. We study these trends using two different success metrics - **Ratings and Populartiy**. We already have the IMDb ratings but how do we measure popularity?
 
-<!-- This information can be useful for movie studios and production companies as they make casting decisions for future projects, as well as for actors and actresses looking to advance their careers. -->
+ This information can be useful for movie studios and production companies as they make casting decisions for future projects, as well as for actors and actresses looking to advance their careers. 
 
 
 | Rating   |   Popularity   | 
@@ -29,16 +30,17 @@ $$ \text{Correlation(Average Rating, Number of votes)} = 0.02$$
 This suggets that they are very weakly correlated and are good candidates for features to look at our data from different perspectives.
 
 
-By observing the trends in the features of successful actor profiles from different generations, we can see how the qualities and experiences that lead to success have changed over time. This information can be useful for actors and actresses looking to succeed in the industry, as it can help them understand what qualities and experiences are likely to lead to success in their careers.
+By observing the trends in the features of successful actor profiles from different generations, we can see how the qualities and experiences that lead to success have changed over time. This information can be useful for actors and actresses looking to succeed in the industry, as it can help them understand what qualities and experiences are likely to lead to success in their careers. -->
 
 
 <!-- Finally, our analysis could inform policy decisions related to the film industry. For example, if we find that certain actor characteristics are associated with movie success, policymakers may consider ways to support and promote actors with these characteristics. This could include initiatives to increase diversity in the industry or to provide training and development opportunities for actors with the most promising characteristics. By understanding the factors that contribute to movie success, we can help policymakers make informed decisions about how to support and promote the film industry. -->
 
-## Genre analysis
+<!--
+# Genre analysis
 
-This section will look at the hidden patterns of the film industry's genres and examine how various film genres can affect an actor's professional career.
+This section will look at the hidden patterns of the film industry's genres and examine how various film genres can affect an actor's professional career.-->
 
-# Distribution of genres in the movie industry.
+# Analysis of genres in the movie industry
 
 Typically, a single film can be classified as many film genres. It's pretty intricate how various film genres interact with one another. The frequency of movie genre combinations in our base movie dataset will be displayed by a chord diagram, where the width of the connection lines denotes the frequency, in order to provide a clear picture of the genre pattern that existed in the film business. 
 
@@ -47,7 +49,7 @@ Typically, a single film can be classified as many film genres. It's pretty intr
 Several genres were removed from the diagram based on how frequently they appeared in our dataset, leaving only the most widely used genres. We can see that the drama genre is closely related to the other genres, which suggests that a drama movie will be a wise choice if rookie actors are unsure of what to look for in their debut movie. because it will give them vital experience that many films can use. Meanwhile, we see that there is a strong association between certain genre pairs, such as comedy and family, action and adventure. Additionally, if two movie genres are significantly connected, we anticipate that an actor or actress with appropriate prior acting experience in one genre will benefit from landing a job in the other.
 
 
-# Investigating impact of movie experience.
+# Investigating impact of movie experience
 
 We develop features about each actor or actress's experience in each well-known film genre—drama, action, romance, comedy, crime, war, family, and mystery—in order to substantiate the aforementioned claim. In light of this, we make movie-actor pairs using all of the films and actors in our dataset. Now, we have statistical information on the actor's experience in all prominent movie genres that depicts the actor's background before filming the movie. We assume that an actor who has already appeared in films of the same genre has a higher chance of landing a role when they audition. By using a correlation analysis, we can determine which types of movie experiences will increase our chances of landing a role in a new film. 
 
@@ -80,12 +82,12 @@ On the other hand, the "Romance" genre has the slowest increasing slope when it 
 
 ![movie_experience_per_genre](data/analysis-over-time/new_experience_per_genre.png)
 
-### Moving on...
+## Moving on...
 It could be a good idea to analyze the relationship between actor/actress experience and movie success, as well as other factors, for different time periods. Doing this could allow us to see if there are any trends or patterns that differ between the different eras. For example, we can compare the average experience of leading actors/actresses in movies released during the baby boomer era versus the millennial era and see if there are any differences.
 
 It's important to keep in mind that making a distinction between different time periods could also introduce other variables that could influence the results of your analysis. For example, there may be differences in movie-making technology, audience preferences, or economic conditions that could affect the success of a movie and confound the relationship between actor/actress experience and movie success. We  need to consider these factors and try to control them.
 
-### Looking at the top 1000 actors only
+## Looking at the top 1000 actors only
 For further inspection, we pick out the top 1000 actors in all of the considered generations and calculate the distribution of their experience per movie genre and end up with the following graph. 
 ![top_1000](data/analysis-over-time/top_1000_both.png)
 
@@ -107,7 +109,7 @@ We find that male actors tend to have more experience in `Drama`, `Action` and `
 Overall, it is clear to see that the top male actors have almost twice as much average experience than female actors. It is not uncommon for male actors to have more experience than female actors in the film industry, as men have historically been more represented in leading roles and have often had more opportunities to work on a wider range of projects. This is a clear bias between males and females; it suggests that there are significant disparities in the career opportunities available to male and female actors within the film industry. It could also indicate that male actors are more likely to be cast in lead roles of the studied genres. On the other hand, it could also be interpreted in a way that favors aspiring female actors; on average you need less movie experience than men to be recognized as a top female actor.
 
 
-# However we remain aware of the potential confounders
+## However we remain aware of the potential confounders
 When analyzing the relationship between actor/actress experience and movie success for different time periods there are unobserved latent variables that might be implicitly affecting our results
 
   - Movie-making technology: The technology available for making movies can change over time, and this could potentially impact the success of a movie. For example, advances in special effects or cinematography could make a movie more visually appealing and impact its box office success.
@@ -144,6 +146,7 @@ Linear relations between the actor features and also with ratings, revenue and b
 | Genre background      | Vector showing the different type of genres the actor has worked in - signifying diversity    |
 | Gender                | Actor:0/Actress:1 | -->
 
+<!--
 ## Non-trivial difference between popularity and critical acclaim []
 The quote 
 > Whether the work that I do shall succeed or achieve critical acclaim is for the audience to decide.
@@ -157,7 +160,7 @@ Many movies such as Tenet, Avatar and other huge budget movies backed by very we
 ## Have a comparison of features based on different success metrics
 
 
-##### lifetime of an actor in a genre - first movie to last movie
+##### lifetime of an actor in a genre - first movie to last movie-->
 
 
 # Do Actors stick to the same genre in the current generation ?
