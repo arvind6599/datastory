@@ -54,7 +54,7 @@ We now know movie experience caters to the success of actors and actresses, thus
     Gen Z (post-Millennial) (circa 1997 to 2012)
     Gen X (circa 2013+)
     
- To ultimately analyse movie experience over time, we examine the number of movies each leading actor/actress had starred in as lead before each movie which inter alia reveals how their career has progressed over time. If a an actor is led or not, is determined by IMDB - our data source for this analysis. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. 
+ To ultimately analyse movie experience over time, we examine the number of movies each leading actor/actress had starred in as lead before each movie which inter alia reveals how their career has progressed over time. If a an actor is a lead or not, is determined by IMDB - our data source for this analysis. Looking at the graph "Average Actor Movie Experience Before Movie Start", we can clearly see that the trend for having more experienced actors in a cast is certainly there. This is, however, the overall view. Therefore, unexperienced actors do not necessarily need to worry to not be picked for roles. Or should they? The answer is as often: it depends. In this case it depends on the genre which the graph "Average Actor Movie Experience Before Movie Start Per Genre" proves. 
 
 ![movie_experience_per_genre](data/analysis-over-time/average%20actor%20movie%20experience.png)
 
@@ -72,7 +72,7 @@ It's important to keep in mind that making a distinction between different time 
 -->
 
 ## Looking at the top 1000 actors only
-For further inspection, we pick out the top 1000 actors in all of the considered generations and calculate the distribution of their experience per movie genre and end up with the following graph. 
+For further inspection, we pick out the top 1000 actors in all of the considered generations and calculate the distribution of their experience per movie genre and end up with the following graph. The top actors are chosen by the number of movies they've starred in; we pick the ones with the most acting experience. 
 ![top_1000](data/analysis-over-time/top_1000_both.png)
 
 As it can be seen for the four main genres, the first 3 generations we are considering generally see a strict increase in actor experience for all genres, but starts plateauing between the `boomers` and `gen_z` generations. These are generally the generations considered to be a "golden age of cinema" with rapid technological advancements due to an outpouring of funding which saw the release of many popular and critically acclaimed movies. 
@@ -94,7 +94,7 @@ Overall, it is clear to see that the top male actors have almost twice as much a
 
 
 ## However we remain aware of the potential confounders
-When analyzing the relationship between actor/actress experience and movie success for different time periods there are unobserved latent variables that might be implicitly affecting our results
+When analyzing the relationship between actor/actress experience and movies for different time periods there are unobserved latent variables that might be implicitly affecting our results
 
   - Movie-making technology: The technology available for making movies can change over time, and this could potentially impact the success of a movie. For example, advances in special effects or cinematography could make a movie more visually appealing and impact its box office success.
 
