@@ -217,6 +217,7 @@ $$
 
 In the figure above we see that many of the well-known actors have a diverse career because their genre entropy is very close to the max value (GE = 2.32) that is attained for a uniform distribution. These results further verify the suggestions made earlier based on the associations between movie genres that actors do have to be more diverse in their career in oder to become famous and financially successful. It allows you to be open to more roles in the movie industry and also build trust among producers and directors about filling in the shoes of the leading role envision.
 
+<!--
 # Conclusion
 
 We attempt to provide a data science approach to movie casting based on correlations with success and trends over time, to identify patterns and features that may be important in deciding who is a better fit to play the leading role for your movie. In this attempt we also try to quantify differences if any between the recipe to get awards or make money, with exceptions both (masterpiece) or neither (flops)
@@ -225,3 +226,4 @@ We attempt to provide a data science approach to movie casting based on correlat
 * How to choose a career path as an actor based on your current experience, which genres are easy to get into, which ones are the long games, which ones can lead to a faster path to critical acclaim, good ratings and popularity
 
 * * *
+-->
