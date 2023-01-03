@@ -180,7 +180,7 @@ With the exception of **Comedy and Drama** we see that many other popular movie 
 
 * Drama - Mystery, Crime, Thriller, Comedy, Romance,
 * Romance - Drama, Comedy
-* Comedy - Family, Drama  
+* Comedy - Family, Romance, Drama  
 * Action - Adventure, Crime, Sport
 * Adventure - Action, Drama
 
@@ -205,6 +205,7 @@ $$
  \text{Genre Entropy (GE)} = H(\text{normalized}(V_g))
 $$
 
+A higher value signifies more uniformity in genres of their past movies. The highest value of 2.32 (=$\log_2(5)$) is attained for the case where an actor has equal weighted experience for all the major genres (Uniform distribution).
 <!-- For this purpose we should first investigate the dominance of a genre in every generation. 
 ![movie_experience_per_genre](data/analysis-over-time/movie_share_of_generation_per_genre.png) -->
 
@@ -215,7 +216,19 @@ $$
 
 ![female entropy](data/pop_female_chart.png)
 
-In the figure above we see that many of the well-known actors have a diverse career because their genre entropy is very close to the max value (GE = 2.32) that is attained for a uniform distribution. These results further verify the suggestions made earlier based on the associations between movie genres that actors do have to be more diverse in their career in oder to become famous and financially successful. It allows you to be open to more roles in the movie industry and also build trust among producers and directors about filling in the shoes of the leading role envision.
+Oh Wow! We have accidentally assembled the Avengers! Does not come as a surprise since many of them of are blockbuster movie actors. In the figure above we see that many of the well-known actors have a diverse career because their genre entropy is very close to the max value signifying a high-degree of uniformity in their choice of genres among the major ones. These results thus signify that some of the topmost popular, famous and financially successful actors do tend to diversify their genre experience. 
+
+Given the advancements in the scale of production of movies and CGI, it is better for an actor to build credibility and versatility in order to be open to more roles in the movie industry. This also helps build trust among big producers and world-renowned directors regarding filling in the shoes of the leading role especially for big budget movies. 
+
+# Conclusion
+Through the medium of our analysis we have attempted to find genre associations, trends in actor experience requirements over different generations and genres and understand the career paths followed by popular and experienced actors. We have verified many popular beliefs and also found ways to leverage the nature of an actor's experience to understand trends in career decision making, casting requirements and what type of movies are compatible for them. 
+
+We learn that you do not require much experience to be part of romantic movies but also cannot hope to stay the Romeo or Juliet of the industry for long, because you will most likely be replaced by fresh faces. 
+Action/Adventure/Superhero movies require a little more experience to enter but can possibly lead to big blockbuster opportunities in the future only once you are at the brink of stardom or have enough experience and versatility. 
+A career in comedy is very promising because you can choose to stick to your strengths and have long career or venture into different compatible genres such as Romance, Family, Drama. Think about it, who does not like good comedy movies? The catch is the initial experience barrier is high. This can be due to the fact that it is tricky to introduce a fresh face in comedy, which is why many of the popular comics are famous for their work before movies such as stand-ups or TV show sketches. 
+Finally - Drama! There are two ways to look at this genre, 1. The serious movies 2. Broader definition that includes movies with a humorous aspect. The serious movies have a very specific theme and style. Actors that specialize in these types of movies, develop an identity of their own and are often accredited with major awards for their performance and contribution to the art. They may not be as diverse in their genre choices; one good example is Joaquin Phoenix (GE = 1.8) - 4 time Academy award winner and very well known for playing dark roles in serious movies. The broader interpretation is overused and conveys that the movie is plot-driven and demand that every character and scene move the story forward. This may not be much, but it does help build associations between genres in our analysis and helped us categorize the data in order to derive meaningful results. 
+
+Thus we have demonstrated how we can follow an analytical approach to understand trends in the movie industry over different generations and genres and derive meaningful inferences from our findings to help actors and movie casters make better decisions.
 
 <!--
 # Conclusion
